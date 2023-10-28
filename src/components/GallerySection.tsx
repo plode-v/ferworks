@@ -26,7 +26,7 @@ const GallerySection = () => {
 
       <Carousel>
         <Carousel.Item>
-          
+          <Image src='/public/image1.png' alt='image-1' width={500} height={700} />
         </Carousel.Item>
       </Carousel>
 
