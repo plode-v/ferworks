@@ -1,13 +1,13 @@
 'use client'
 import React from 'react'
-import Carousel from 'nuka-carousel'
 import Image from 'next/image'
+import Carousel from 'react-bootstrap/Carousel'
 
 const GallerySection = () => {
 
   return (
     <div className='w-full h-[700px] bg-neutral-50'>
-        <div className='flex items-center justify-center h-full'>
+        {/* <div className='flex items-center justify-center h-full'>
           <Carousel
             autoplay={true}
             wrapAround={true}
@@ -22,7 +22,14 @@ const GallerySection = () => {
               <Image src="/public/img-2.jpg" alt='img-2' width={500} height={700} />
             <div className="w-full h-full bg-purple-500">3</div>
           </Carousel>
-        </div>
+        </div> */}
+
+      <Carousel>
+        <Carousel.Item>
+          
+        </Carousel.Item>
+      </Carousel>
+
     </div>
   )
 }
