@@ -2,6 +2,9 @@
 import React from 'react'
 import Image from 'next/image'
 import Carousel from 'react-bootstrap/Carousel'
+import image1 from '/public/img-1.jpg'
+import image2 from '/public/img-2.jpg'
+import image3 from '/public/img-3.jpg'
 
 const GallerySection = () => {
 
@@ -24,9 +27,14 @@ const GallerySection = () => {
           </Carousel>
         </div> */}
 
-      <Carousel>
+      <Carousel
+       className='flex items-center justify-center w-full' 
+      >
         <Carousel.Item>
-          <Image src='/public/image1.png' alt='image-1' width={500} height={700} />
+          <Image src={image1} alt='image-1' width={1200} height={700} />
+        </Carousel.Item>
+        <Carousel.Item>
+          <Image src={image2} alt='image-2' width={500} height={700} />
         </Carousel.Item>
       </Carousel>
 
