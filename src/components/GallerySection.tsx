@@ -6,15 +6,16 @@ import image1 from '/public/img-1.jpg'
 import image4 from '/public/img-4.jpg'
 import image3 from '/public/img-3.jpg'
 
+const images = [image1, image4, image3];
+
 const GallerySection = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const images = [image1, image4, image3];
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 3000);
+    }, 1000)
 
     return () => {
       clearInterval(interval);
@@ -22,8 +23,8 @@ const GallerySection = () => {
   }, []);
 
   return (
-    <div className='w-full h-[700px] bg-neutral-50 flex justify-center'>
-      {/* <Carousel className='w-[1200px] h-full overflow-hidden' variant='light'>
+  <div className='w-full h-[700px] bg-neutral-50 flex justify-center'>
+    <Carousel className='w-[1200px] h-full overflow-hidden' variant='light' wrap={true}>
         <Carousel.Item>
           <div className='flex justify-center'>
             <Image src={image1} alt='image-1'/>
@@ -39,21 +40,8 @@ const GallerySection = () => {
             <Image src={image3} alt='image-3' className='w-full' />
           </div>
         </Carousel.Item>
-  </Carousel> */}
-
-      <div className='relative overflow-hidden'>
-        {images.map((img, index) => (
-          <div 
-            key={index}
-            className={`w-screen flex-shrink-0 transition-transform duration-100 transform ${index === currentIndex ? 'translate-x-0' : '-translate-x-full'}`}
-          >
-            <Image src={img} alt={`image-${index}+1`} className=''/>
-          </div>
-        ))}
-
-      </div>
-
-    </div>
+    </Carousel>
+  </div>
   )
 }
 
