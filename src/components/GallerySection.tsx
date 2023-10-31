@@ -24,7 +24,7 @@ const GallerySection = () => {
   }, []);
 
   return (
-  <div className='w-full h-[500px] bg-neutral-50 flex justify-start items-center'>
+  <div className='w-full h-[500px] bg-neutral-50 flex justify-start items-center overflow-x-hidden'>
     {/* <Carousel className='w-full h-full overflow-hidden' variant='light' wrap={true}>
         <Carousel.Item>
           <div className='flex justify-center'>
