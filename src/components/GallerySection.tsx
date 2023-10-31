@@ -5,8 +5,9 @@ import Carousel from 'react-bootstrap/Carousel'
 import image1 from '/public/img-1.jpg'
 import image4 from '/public/img-4.jpg'
 import image3 from '/public/img-3.jpg'
+import image2 from "/public/img-2.jpg"
 
-const images = [image1, image4, image3];
+const images = [image1, image4, image3, image2];
 
 const GallerySection = () => {
 
@@ -23,8 +24,8 @@ const GallerySection = () => {
   }, []);
 
   return (
-  <div className='w-full h-[700px] bg-neutral-50 flex justify-center'>
-    <Carousel className='w-[1200px] h-full overflow-hidden' variant='light' wrap={true}>
+  <div className='w-full h-[500px] bg-neutral-50 flex justify-start items-center'>
+    {/* <Carousel className='w-full h-full overflow-hidden' variant='light' wrap={true}>
         <Carousel.Item>
           <div className='flex justify-center'>
             <Image src={image1} alt='image-1'/>
@@ -40,7 +41,16 @@ const GallerySection = () => {
             <Image src={image3} alt='image-3' className='w-full' />
           </div>
         </Carousel.Item>
-    </Carousel>
+    </Carousel> */}
+
+    <div className='flex gap-10'>
+      {images.map((img, idx) => (
+        <div key={idx} className='h-[400px] aspect-square flex'>
+          <Image src={img} alt={`Image-${idx+1}`} className='object-cover rounded-md' />
+        </div>
+      ))}
+    </div>
+
   </div>
   )
 }
