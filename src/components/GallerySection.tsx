@@ -43,9 +43,9 @@ const GallerySection = () => {
         </Carousel.Item>
     </Carousel> */}
 
-    <div className='flex gap-10'>
+    <div className='flex gap-10 slider_wrapper'>
       {images.map((img, idx) => (
-        <div key={idx} className='h-[400px] aspect-square flex'>
+        <div key={idx} className='h-[400px] aspect-square flex slider'>
           <Image src={img} alt={`Image-${idx+1}`} className='object-cover rounded-md' />
         </div>
       ))}
