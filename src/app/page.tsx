@@ -5,16 +5,20 @@ import GallerySection from "@/components/GallerySection"
 import Testimonials from "@/components/Testimonials"
 import BookingSection from "@/components/BookingSection"
 import Footer from "@/components/Footer"
+import Introduction from "@/components/Introduction"
 
 export default function Home() {
   return (
-    <div className="max-w-screen min-h-screen">
-      <HeroBanner />
-      <Features />
-      <GallerySection />
-      <Testimonials />
-      <BookingSection />
-      <Footer />
+    <div className="min-h-screen flex flex-col 3xl:items-center">
+      <div className="flex-col flex">
+        <HeroBanner />
+        <Introduction />
+        <Features />
+        <GallerySection />
+        <Testimonials />
+        <BookingSection />
+        <Footer />
+      </div>
     </div>
   )
 }
