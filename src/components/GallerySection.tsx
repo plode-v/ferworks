@@ -24,7 +24,7 @@ const GallerySection = () => {
   }, []);
 
   return (
-  <div className='w-full h-[500px] bg-neutral-50 flex justify-start items-center overflow-x-hidden'>
+  <div className='w-full h-[600px] bg-neutral-50 flex items-center'>
     {/* <Carousel className='w-full h-full overflow-hidden' variant='light' wrap={true}>
         <Carousel.Item>
           <div className='flex justify-center'>
@@ -43,12 +43,29 @@ const GallerySection = () => {
         </Carousel.Item>
     </Carousel> */}
 
-    <div className='flex gap-10 slider_wrapper'>
+    <div className='flex overflow-hidden'>
+      <div className='flex gap-10'> {/* add slideer-wrapper */}
+        {images.map((img, idx) => (
+            <div key={idx} className='h-[500px] aspect-square'>
+              <Image 
+                src={img} 
+                alt={`Image-${idx+1}`} 
+                className='object-cover rounded-md h-full'
+              />
+            </div>
+        ))}
+      </div>
+      {/* <div className='flex gap-10 overflow-hidden mx-10 slider_wrapper'>
       {images.map((img, idx) => (
-        <div key={idx} className='h-[400px] aspect-square flex slider'>
-          <Image src={img} alt={`Image-${idx+1}`} className='object-cover rounded-md' />
+        <div key={idx} className='h-[500px] aspect-square'>
+          <Image 
+            src={img} 
+            alt={`Image-${idx+1}`} 
+            className='object-cover rounded-md flex h-full'
+          />
         </div>
       ))}
+      </div> */}
     </div>
 
   </div>

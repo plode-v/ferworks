@@ -29,6 +29,6 @@ html {
   }
 }
 
-.slider_wrapper {
-  animation: slide infinite 50s;
+.slider-wrapper {
+  animation: 10s slide infinite linear;
 }

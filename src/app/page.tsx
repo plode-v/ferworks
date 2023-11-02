@@ -9,7 +9,6 @@ import Footer from "@/components/Footer"
 export default function Home() {
   return (
     <div className="max-w-screen min-h-screen">
-      <Navbar />
       <HeroBanner />
       <Features />
       <GallerySection />
