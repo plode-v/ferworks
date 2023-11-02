@@ -9,16 +9,14 @@ import Introduction from "@/components/Introduction"
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col 3xl:items-center">
-      <div className="flex-col flex">
-        <HeroBanner />
-        <Introduction />
-        <Features />
-        <GallerySection />
-        <Testimonials />
-        <BookingSection />
-        <Footer />
-      </div>
+    <div className="min-h-screen">
+      <HeroBanner />
+      <Introduction />
+      <Features />
+      <GallerySection />
+      <Testimonials />
+      <BookingSection />
+      <Footer />
     </div>
   )
 }

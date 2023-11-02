@@ -25,8 +25,8 @@ const GallerySection = () => {
   }, [])
 
   return (
-      <div className='w-full h-[600px] bg-neutral-50 flex items-center'>
-        <div className={`flex gap-10 overflow-hidden`}>
+      <div className='w-full h-[600px] bg-neutral-50 flex items-center justify-center'>
+        <div className="flex gap-10 overflow-hidden w-full 3xl:w-1/2 3xl:rounded-lg duration-300">
           {images.map((img, idx) => (
               <div key={idx} className={`h-[500px] aspect-square slider-wrapper`}>
                 <Image 
