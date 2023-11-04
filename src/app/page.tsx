@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar"
 import HeroBanner from "@/components/HeroBanner"
 import Features from "@/components/Features"
 import GallerySection from "@/components/GallerySection"
