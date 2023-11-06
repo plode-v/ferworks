@@ -29,7 +29,8 @@ const Navbar = () => {
           <div>Logo</div>
         </Link>
         </div>
-        <div className='flex gap-3'>
+        <div className='flex gap-5 items-center text-[18px]'>
+          <p className='pr-10'>Call Us: 949-999-9999</p>
           <Link className='text-white' href="about-us"><button>About Us</button></Link>
             <button>Contact Us</button>
             <button>button3</button>
