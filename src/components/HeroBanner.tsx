@@ -1,4 +1,6 @@
+'use client'
 import React from 'react'
+import BookingModal from './BookingModal'
 
 const HeroBanner = () => {
   return (
@@ -9,7 +11,10 @@ const HeroBanner = () => {
                 <p className='text-[18px]'>Let us secure your home and repair your devices</p>
             </div>
             <div className='w-max'>
-              <button className='bg-[#429ef5] text-white p-3 rounded-lg'>Book an Appointment</button>
+              <BookingModal 
+                buttonClass='bg-blue-500 text-white py-4 px-7 rounded-[10px]'
+                buttonString='Book an Appointment'
+              />
             </div>
         </div>
     </div>
