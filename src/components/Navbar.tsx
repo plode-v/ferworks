@@ -22,6 +22,10 @@ const Navbar = () => {
     }
   })
 
+  const handleClick = () => {
+    console.log(process.env.NEXT_PUBLIC_PHONE_NUM)
+  }
+
   return (
     <div className={`h-[70px] justify-between flex items-center px-5 bg-[#429ef5] text-white w-[98%] 3xl:w-2/3 fixed z-20 rounded-md top-3 left-1/2 -translate-x-1/2 duration-300 ${visible ? 'transform translate-y-0' : '-translate-y-[calc(0.75rem+70px)]'}`}>
         <div>
@@ -30,7 +34,7 @@ const Navbar = () => {
         </Link>
         </div>
         <div className='flex gap-5 items-center text-[18px]'>
-          <button className='bg-red-300'><a href={`tel:${process.env.NEXT_PUBLIC_PHONE_NUM}`}><p>Call Us Now</p></a></button>
+          <button className='bg-red-300' onClick={handleClick}><a href={`tel:${process.env.NEXT_PUBLIC_PHONE_NUM}`}><p>Call Us Now</p></a></button>
           {/* <p className='pr-10'>Call Us: 949-999-9999</p> */}
           <Link className='text-white' href="about-us"><button>About Us</button></Link>
             <button>Contact Us</button>
