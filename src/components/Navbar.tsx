@@ -30,7 +30,8 @@ const Navbar = () => {
         </Link>
         </div>
         <div className='flex gap-5 items-center text-[18px]'>
-          <p className='pr-10'>Call Us: 949-999-9999</p>
+          <button className='bg-red-300'><a href={`tel:${process.env.NEXT_PUBLIC_PHONE_NUM}`}><p>Call Us Now</p></a></button>
+          {/* <p className='pr-10'>Call Us: 949-999-9999</p> */}
           <Link className='text-white' href="about-us"><button>About Us</button></Link>
             <button>Contact Us</button>
             <button>button3</button>

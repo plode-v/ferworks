@@ -41,9 +41,9 @@ const BookingModal = ({ buttonClass, buttonString }: Props ) => {
                 borderRadius: '10px'
             }}>
                 <iframe 
-                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ32-7uL9mfgIIJKNblrzigMt7GN3Nb3LTkcC0RpL6WukSPcUwA8xeg7fat2r-uSVA2hIT2EPxO3?gv=true" 
-                width="100%" 
-                height="100%" 
+                    src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ1x-PROK0Jar6kki9QfC3sCXBzpME9PIcCy9vGABtD0dIKWWZ46FEwlg2o4NvbzWtuDnKWXiwT7?gv=true" 
+                    width="100%" 
+                    height="100%" 
                 />
             </Box>
         </Modal>
