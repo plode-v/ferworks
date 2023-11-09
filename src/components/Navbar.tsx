@@ -24,17 +24,17 @@ const Navbar = () => {
   })
 
   return (
-    <div className={`h-[70px] justify-between flex items-center px-5 bg-[#429EF5] bg-opacity-30 backdrop-blur-md w-full fixed z-20`}>
-        <div>
+    <div className={`h-[70px] justify-between flex items-center px-5 bg-[#429EF5] bg-opacity-30 backdrop-blur-md w-full fixed z-20 3xl:justify-center`}>
+      <div className='flex w-full items-center justify-between 3xl:w-2/3'>
         <Link className='text-white no-underline' href="/">
           <div>Logo</div>
         </Link>
-        </div>
         <div className='flex gap-5 items-center text-[18px]'>
           <Link className='' href="about-us"><Button className='bg-[#fafafa] text-black' variant='navbar'>About Us</Button></Link>
           <Link className='' href="contact-us"><button>Contact Us</button></Link>
-            <button>button3</button>
-        </div>
+          <Link className='' href="contact-us"><button>Contact Us</button></Link>
+      </div>
+      </div>
     </div>
   )
 }
