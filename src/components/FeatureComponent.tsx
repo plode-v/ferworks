@@ -2,9 +2,9 @@ import React from 'react'
 
 const FeatureComponent = ({text}: {text: string}) => {
   return (
-    <div className='flex flex-col items-center w-[30%] p-5 text-center justify-center'>
-        <div className='border border-white rounded-full h-[80px] w-[80px]' />
-        <p className='py-5'>{text}</p>
+    <div className='flex flex-col w-[300px] h-[350px] items-center justify-center bg-white hover:scale-[102%] duration-150 rounded-xl'>
+        <div className='border border-black rounded-full h-[100px] w-[100px] mb-5' />
+        <p className='mx-5 text-center text-black'>{text}</p>
     </div>
   )
 }
