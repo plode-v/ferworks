@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react'
+import { Button } from './ui/button';
 
 const Navbar = () => {
 
@@ -23,14 +24,14 @@ const Navbar = () => {
   })
 
   return (
-    <div className={`h-[70px] justify-between flex items-center px-5 bg-blue-500 bg-opacity-20 backdrop-blur-md w-full fixed z-20`}>
+    <div className={`h-[70px] justify-between flex items-center px-5 bg-[#429EF5] bg-opacity-30 backdrop-blur-md w-full fixed z-20`}>
         <div>
         <Link className='text-white no-underline' href="/">
           <div>Logo</div>
         </Link>
         </div>
         <div className='flex gap-5 items-center text-[18px]'>
-          <Link className='' href="about-us"><button>About Us</button></Link>
+          <Link className='' href="about-us"><Button className='bg-[#fafafa] text-black' variant='navbar'>About Us</Button></Link>
           <Link className='' href="contact-us"><button>Contact Us</button></Link>
             <button>button3</button>
         </div>
