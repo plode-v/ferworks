@@ -23,15 +23,15 @@ const Navbar = () => {
   })
 
   return (
-    <div className={`h-[70px] justify-between flex items-center px-5 bg-[#429ef5] text-white w-[98%] 3xl:w-2/3 fixed z-20 rounded-md top-3 left-1/2 -translate-x-1/2 duration-300 ${visible ? 'transform translate-y-0' : '-translate-y-[calc(0.75rem+70px)]'}`}>
+    <div className={`h-[70px] justify-between flex items-center px-5 bg-blue-500 bg-opacity-20 backdrop-blur-md w-full fixed z-20`}>
         <div>
         <Link className='text-white no-underline' href="/">
           <div>Logo</div>
         </Link>
         </div>
         <div className='flex gap-5 items-center text-[18px]'>
-          <Link className='text-white' href="about-us"><button>About Us</button></Link>
-          <Link className='text-white' href="contact-us"><button>Contact Us</button></Link>
+          <Link className='' href="about-us"><button>About Us</button></Link>
+          <Link className='' href="contact-us"><button>Contact Us</button></Link>
             <button>button3</button>
         </div>
     </div>
@@ -39,3 +39,6 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+// ${visible ? 'transform translate-y-0' : '-translate-y-[calc(0.75rem+70px)]'}
+// bg-[#429ef5]
