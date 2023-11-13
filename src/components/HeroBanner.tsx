@@ -12,7 +12,7 @@ const HeroBanner = () => {
             </div>
             <div className='w-max'>
               <BookingModal 
-                buttonClass='bg-blue-500 text-white py-4 px-7 rounded-[10px]'
+                buttonClass='bg-blue-500 text-white py-4 px-7 rounded-full booking-section booking-left after:rounded-[10rem]'
                 buttonString='Book an Appointment'
               />
             </div>

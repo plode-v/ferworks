@@ -30,9 +30,8 @@ const Navbar = () => {
           <div>Logo</div>
         </Link>
         <div className='flex gap-5 items-center text-[18px]'>
-          <Link className='' href="about-us"><Button className='bg-[#fafafa] text-black' variant='navbar'>About Us</Button></Link>
-          <Link className='' href="contact-us"><button>Contact Us</button></Link>
-          <Link className='' href="contact-us"><button>Contact Us</button></Link>
+          <Link className='' href="about-us"><Button className='bg-[#fafafa] text-black hover:text-white' variant='navbar'>About Us</Button></Link>
+          <Link className='' href="contact-us"><Button className='bg-[#fafafa] text-black hover:text-white' variant='navbar'>Contact Us</Button></Link>
       </div>
       </div>
     </div>

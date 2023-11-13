@@ -1,28 +1,23 @@
 'use client'
-import React, { useState } from 'react'
-import { Modal, Box } from "@mui/material"
+import React, { useEffect, useState } from 'react'
 import BookingModal from './BookingModal';
+import Link from 'next/link';
 
 
 const BookingSection = () => {
 
-  const [open, setOpen] = useState<boolean>(false);
-  const handleOpen = () => {
-    setOpen(true);
-  }
-  const handleClose = () => {
-    setOpen(false);
-  }
-
   return (
-    <div className='w-full bg-neutral-50 h-[300px] flex items-center justify-center'>
-        <div className='flex w-full h-full 3xl:w-1/2 border duration-300 items-center justify-center flex-col gap-10'>
-          <span className='capitalize'>let&apos;s make your home more secure</span>
-          <BookingModal 
-            buttonClass='bg-blue-500 text-white text-[20px] py-5 px-8 rounded-full'
-            buttonString='Book Now'
-          />
-        </div>
+    <div className='w-full bg-neutral-50 h-[650px] flex items-center justify-evenly flex-col'>
+      <div className='flex justify-center items-center w-full'>
+        <h1 className='capitalize font-[700] text-4xl text-gray-800'>get in touch</h1>
+      </div>
+      <div className='flex w-full 3xl:w-1/2 duration-300 items-center justify-center gap-20'>
+        <BookingModal 
+          buttonClass='bg-blue-500 text-white h-[400px] w-1/4 text-[18px] rounded-2xl booking-section booking-left after:rounded-2xl'
+          buttonString='Book Now'
+        />
+        <Link href="contact-us" className='bg-blue-500 text-white h-[400px] w-1/4 text-[18px] rounded-2xl booking-section booking-right after:rounded-2xl justify-center items-center flex'>Contact Us</Link>
+      </div>
     </div>
   )
 }
