@@ -1,8 +1,14 @@
+import Header from '@/components/Header'
 import React from 'react'
 
 const page = () => {
   return (
-    <div className='pt-[calc(0.75rem+70px)]'>About Us</div>
+    <div className='h-screen'>
+      <Header text='about us' />
+      <div className='h-4/5 w-full'>
+        about us
+      </div>
+    </div>
   )
 }
 
