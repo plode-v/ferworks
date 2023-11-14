@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactCard = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className='h-[400px] w-[350px] shadow-2xl -translate-y-6 flex bg-white'>
+    <div className='2xl:h-[400px] h-[300px] 2xl:w-[350px] w-[250px] shadow-2xl -translate-y-8 flex bg-white rounded-lg'>
         {children}
     </div>
   )
