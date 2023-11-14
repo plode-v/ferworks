@@ -24,14 +24,18 @@ const Navbar = () => {
   })
 
   return (
-    <div className={`h-[70px] justify-between flex items-center px-5 bg-[#429EF5] bg-opacity-30 backdrop-blur-md w-full fixed z-20 3xl:justify-center`}>
-      <div className='flex w-full items-center justify-between 3xl:w-2/3'>
+    <div className={`h-[70px] justify-between flex items-center px-5 bg-[#429EF5] bg-opacity-60 backdrop-blur-md w-full fixed z-20 3xl:justify-center`}>
+      <div className='flex w-full items-center justify-between 3xl:w-2/3 h-full'>
         <Link className='text-white no-underline' href="/">
           <div>Logo</div>
         </Link>
-        <div className='flex gap-5 items-center text-[18px]'>
-          <Link className='' href="about-us"><Button className='bg-[#fafafa] text-black hover:text-white' variant='navbar'>About Us</Button></Link>
-          <Link className='' href="contact-us"><Button className='bg-[#fafafa] text-black hover:text-white' variant='navbar'>Contact Us</Button></Link>
+        <div className='flex gap-5 items-center uppercase font-[500] tracking-tight text-white text-[14px]'>
+          <Link href="about-us">
+            About Us
+          </Link>
+          <Link href="contact-us">
+            Contact Us
+          </Link>
       </div>
       </div>
     </div>
