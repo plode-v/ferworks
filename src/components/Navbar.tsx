@@ -24,12 +24,12 @@ const Navbar = () => {
   })
 
   return (
-    <div className={`h-[70px] justify-between flex items-center px-5 bg-[#429EF5] bg-opacity-60 backdrop-blur-md w-full fixed z-20 3xl:justify-center`}>
+    <div className={`lg:h-[70px] md:h-[50px] justify-between flex items-center px-5 bg-[#429EF5] bg-opacity-60 backdrop-blur-md w-full fixed z-20 3xl:justify-center`}>
       <div className='flex w-full items-center justify-between 3xl:w-2/3 h-full'>
         <Link className='text-white no-underline' href="/">
           <div>Logo</div>
         </Link>
-        <div className='flex gap-5 items-center uppercase font-[500] tracking-tight text-white text-[14px]'>
+        <div className='flex gap-5 items-center uppercase font-[500] tracking-tight text-white lg:text-[14px] md:text-[12px]'>
           <Link href="about-us">
             About Us
           </Link>
