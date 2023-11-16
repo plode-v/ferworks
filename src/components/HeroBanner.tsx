@@ -5,6 +5,7 @@ import BookingModal from './BookingModal'
 const HeroBanner = () => {
   return (
     <div className='lg:h-[700px] md:h-[420px] relative bg-neutral-100 flex flex-col items-center justify-center'>
+      <p className='font-[800] top-1/2 absolute right-10 lg:text-[80px] text-[40px] opacity-20 uppercase'>add animated image</p>
         <div className='flex flex-col justify-center h-3/4 pl-[7%] w-full 3xl:w-2/3 duration-300'>
             <div className='w-max lg:pb-20 md:pb-10'>
                 <h1 className='lg:text-[54px] font-[600] capitalize md:text-[24px]'>service starts at $55</h1>
