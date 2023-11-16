@@ -6,11 +6,13 @@ import emailjs from "@emailjs/browser";
 
 const ContactUs = () => {
 
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (event: any) => {
     event.preventDefault();
 
+
+    // FIXME: configure ID and API keys
     emailjs.sendForm("YOUR SERVICE ID", "YOUR TEMPLATE ID", form.current!, "YOUR PUBLIC KEY")
       .then((result) => {
         console.log(result.text);
@@ -26,17 +28,17 @@ const ContactUs = () => {
         <div className='h-max flex justify-center 2xl:gap-x-16 gap-x-12'>
           <ContactCard>
             <div>
-
+              {/* FIXME: add more information here */}
             </div>
           </ContactCard>
           <ContactCard>
             <div>
-
+              {/* FIXME: add more information here */}
             </div>
           </ContactCard>
           <ContactCard>
             <div>
-
+              {/* FIXME: add more information here */}
             </div>
           </ContactCard>
         </div>
