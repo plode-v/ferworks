@@ -1,64 +1,43 @@
 'use client'
-import React, { ChangeEvent, FormEvent, FormEventHandler, LegacyRef, useRef, useState } from 'react'
+import React from 'react'
 import Header from '@/components/Header'
 import ContactCard from '@/components/ContactCard'
-import emailjs from "@emailjs/browser";
+import Form from '@/components/Form';
 
 const ContactUs = () => {
 
-  const form = useRef<HTMLFormElement>(null);
-
-  const sendEmail = (event: any) => {
-    event.preventDefault();
-
-
-    // FIXME: configure ID and API keys
-    emailjs.sendForm("YOUR SERVICE ID", "YOUR TEMPLATE ID", form.current!, "YOUR PUBLIC KEY")
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      })
-  }
-
   return (
-    <div className='h-screen w-full bg-white'>
+    <div className='h-full w-full bg-white'>
       <Header header='contact us' />
       <div className='items-center justify-center flex flex-col'>
-        <div className='h-max flex justify-center 2xl:gap-x-16 gap-x-12'>
+        <div className='h-max flex justify-center 2xl:gap-x-16 lg:gap-x-12 md:gap-x-8'>
           <ContactCard>
             <div>
-              {/* FIXME: add more information here */}
+              address
             </div>
           </ContactCard>
           <ContactCard>
             <div>
-              {/* FIXME: add more information here */}
+              phone number
             </div>
           </ContactCard>
           <ContactCard>
             <div>
-              {/* FIXME: add more information here */}
+              emails
             </div>
           </ContactCard>
         </div>
-        <section className='2xl:h-[800px] h-[600px] w-full items-center flex justify-center 3xl:w-2/3'>
-          <div className='flex border h-[85%] w-4/5 items-center justify-center'>
-            <form ref={form} onSubmit={sendEmail} className='flex flex-col gap-4'>
-              <div className='grid'>
-                <label>Name:</label>
-                <input type="text" name='name' className='border' />
-              </div>
-              <div className='grid'>
-                <label>Email:</label>
-                <input type="email" name='email' className='border' />
-              </div>
-              <div className='grid'>
-                <label>Message:</label>
-                <textarea name="message" className='border' />
-              </div>
-              <button type='submit' className='bg-blue-500 text-white rounded-sm'>Send</button>
-            </form>
+        <section className='2xl:h-[800px] lg:h-[600px] md:h-[550px] w-full flex justify-center items-center 3xl:w-2/3'>
+          <div className='flex h-max 3xl:w-2/3 w-4/5 items-start justify-center lg:gap-20 md:gap-10'>
+            <div className='lg:w-2/3 w-full h-3/4 justify-evenly flex flex-col items-start'>
+              <h1 className='text-neutral-700 text-2xl capitalize tracking-wide pb-10'>Send us a message</h1>
+              <Form />
+            </div>
+            {/* FIXME: MAYBE MAYBE MAYBE */}
+            {/* <div className='w-1/3 h-max flex flex-col justify-center items-start border space-y-5 p-8'>
+              <p className='font-[600] tracking-wide'>Media Contact</p>
+              <p className='leading-relaxed text-neutral-500'>If you are composing an article or conducting a review of our services, we would be delighted to connect with you and furnish tailored information, images, or any other assets to cater to you requirements.</p>
+            </div> */}
           </div>
         </section>
       </div>

@@ -15,7 +15,6 @@ export default function Home() {
       <GallerySection />
       <Testimonials />
       <BookingSection />
-      <Footer />
     </div>
   )
 }
