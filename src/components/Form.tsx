@@ -18,7 +18,7 @@ const Form = () => {
   
   
       // FIXME: configure ID and API keys
-      emailjs.sendForm("YOUR SERVICE ID", "YOUR TEMPLATE ID", form.current!, "YOUR PUBLIC KEY")
+      emailjs.sendForm(process.env.NEXT_PUBLIC_EMIALJS_SERVICE_ID!, process.env.NEXT_PUBLIC_EMIALJS_TEMPLATE_ID!, form.current!, process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!)
         .then((result) => {
           console.log(result.text);
         }, (error) => {
