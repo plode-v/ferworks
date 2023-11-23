@@ -26,16 +26,22 @@ const GallerySection = () => {
 
   return (
       <div className='w-full lg:h-[600px] md:h-[450px] bg-neutral-50 flex items-center justify-center'>
-        <div className="flex gap-10 overflow-hidden w-full 3xl:w-1/2 3xl:rounded-lg duration-300">
-          {images.map((img, idx) => (
-              <div key={idx} className={`lg:h-[500px] md:h-[350px] aspect-square slider-wrapper`}>
-                <Image 
-                  src={img} 
-                  alt={`Image-${idx+1}`} 
-                  className='object-cover rounded-md md:h-[350px] lg:h-[500px]'
-                />
-              </div>
-          ))}
+        <div className="w-full 3xl:w-1/2 3xl:rounded-lg duration-300">
+          <div className='overflow-hidden flex w-max'>
+            <div className='carousel-slide'>
+              <Image src={image1} alt='image-1' className='h-[500px] w-[500px] object-cover mx-5'/>
+              <Image src={image4} alt='image-4' className='h-[500px] w-[500px] object-cover mx-5'/>
+              <Image src={image2} alt='image-2' className='h-[500px] w-[500px] object-cover mx-5'/>
+              <Image src={image3} alt='image-3' className='h-[500px] w-[500px] object-cover mx-5'/>
+            </div>
+            <div className='carousel-slide'>
+              <Image src={image1} alt='image-1' className='h-[500px] w-[500px] object-cover mx-5'/>
+              <Image src={image4} alt='image-4' className='h-[500px] w-[500px] object-cover mx-5'/>
+              <Image src={image2} alt='image-2' className='h-[500px] w-[500px] object-cover mx-5'/>
+              <Image src={image3} alt='image-3' className='h-[500px] w-[500px] object-cover mx-5'/>
+            </div>
+          </div>
+
         </div>
       </div>
   )

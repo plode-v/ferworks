@@ -94,16 +94,19 @@ html {
 }
 
 @keyframes slide {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
+  to {
     transform: translateX(-100%);
-  }
+  }  
 }
 
-.slider-wrapper {
-  animation: 10s slide infinite linear;
+.carousel-slide {
+  animation: 20s slide linear infinite;
+  height: 500px;
+  width: max-content;
+  display: flex;
 }
 
 .booking-section {
