@@ -26,19 +26,19 @@ const GallerySection = () => {
 
   return (
       <div className='w-full lg:h-[600px] md:h-[450px] bg-neutral-50 flex items-center justify-center'>
-        <div className="w-full 3xl:w-1/2 3xl:rounded-lg duration-300">
-          <div className='overflow-hidden flex w-max'>
+        <div className="w-full 3xl:w-1/2 overflow-hidden 3xl:rounded-lg duration-300">
+          <div className='overflow-hidden flex items-center justify-center w-max'>
             <div className='carousel-slide'>
-              <Image src={image1} alt='image-1' className='h-[500px] w-[500px] object-cover mx-5'/>
-              <Image src={image4} alt='image-4' className='h-[500px] w-[500px] object-cover mx-5'/>
-              <Image src={image2} alt='image-2' className='h-[500px] w-[500px] object-cover mx-5'/>
-              <Image src={image3} alt='image-3' className='h-[500px] w-[500px] object-cover mx-5'/>
+              <Image src={image1} alt='image-1' />
+              <Image src={image4} alt='image-4' />
+              <Image src={image2} alt='image-2' />
+              <Image src={image3} alt='image-3' />
             </div>
             <div className='carousel-slide'>
-              <Image src={image1} alt='image-1' className='h-[500px] w-[500px] object-cover mx-5'/>
-              <Image src={image4} alt='image-4' className='h-[500px] w-[500px] object-cover mx-5'/>
-              <Image src={image2} alt='image-2' className='h-[500px] w-[500px] object-cover mx-5'/>
-              <Image src={image3} alt='image-3' className='h-[500px] w-[500px] object-cover mx-5'/>
+              <Image src={image1} alt='image-1' />
+              <Image src={image4} alt='image-4' />
+              <Image src={image2} alt='image-2' />
+              <Image src={image3} alt='image-3' />
             </div>
           </div>
 

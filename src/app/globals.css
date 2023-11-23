@@ -103,10 +103,25 @@ html {
 }
 
 .carousel-slide {
-  animation: 20s slide linear infinite;
+  animation: 45s slide linear infinite;
   height: 500px;
   width: max-content;
   display: flex;
+  align-items: center;
+}
+
+.carousel-slide img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  margin: 0 1.25rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .carousel-slide img {
+    width: 350px;
+    height: 350px;
+  }
 }
 
 .booking-section {
