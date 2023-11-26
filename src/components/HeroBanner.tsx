@@ -1,13 +1,15 @@
 'use client'
 import React from 'react'
 import BookingModal from './BookingModal'
+import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import HeroAnimation from "../../public/HeroAnimation.json"
 
 const HeroBanner = () => {
   return (
     <div className='lg:h-[700px] md:h-[420px] relative bg-neutral-100 flex flex-col items-center justify-center'>
-      <p className='font-[800] top-1/2 absolute right-10 lg:text-[80px] text-[40px] opacity-20 uppercase'>add animated image</p>
-        <div className='flex flex-col justify-center h-3/4 pl-[7%] w-full 3xl:w-2/3 duration-300'>
-            <div className='w-max lg:pb-20 md:pb-10'>
+        <div className='flex justify-center h-3/4 w-full 3xl:w-1/2 duration-300 overflow-hidden'>
+          <div className='flex-col flex lg:w-full  pl-[7%] justify-center'>
+            <div className='lg:pb-20 md:pb-10'>
                 <h1 className='lg:text-[54px] font-[600] capitalize md:text-[24px]'>service starts at $55</h1>
                 <p className='lg:text-[18px] md:text-[14px]'>Let us secure your home and repair your devices</p>
             </div>
@@ -17,6 +19,15 @@ const HeroBanner = () => {
                 buttonString='Book an Appointment'
               />
             </div>
+          </div>
+            <div className='lg:w-3/4 md:w-1/2 justify-center flex items-center'>
+              <Player
+                className='lg:h-[700px] md:h-[500px]'
+                autoplay
+                loop
+                src="https://lottie.host/d7757b71-15a5-48c4-96b5-cce6472e1292/z2bYMmzPDM.json"
+              />
+          </div>
         </div>
     </div>
   )
