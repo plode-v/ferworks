@@ -24,7 +24,7 @@ const Navbar = () => {
   })
 
   return (
-    <div className={`lg:h-[70px] md:h-[50px] justify-between flex items-center px-5 bg-[#429EF5] bg-opacity-60 backdrop-blur-md w-full fixed z-20 3xl:justify-center`}>
+    <div className={`lg:h-[70px] md:h-[50px] justify-between flex items-center px-5 bg-[#429EF5] backdrop-blur-md w-full fixed z-30 3xl:justify-center`}>
       <div className='flex w-full items-center justify-between 3xl:w-2/3 h-full'>
         <Link className='text-white no-underline' href="/">
           <div>Logo</div>
