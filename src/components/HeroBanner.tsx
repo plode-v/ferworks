@@ -14,7 +14,7 @@ const HeroBanner = () => {
           <Image src={image1} alt='hero' className='absolute w-full object-cover blur-xl -translate-y-24 3xl:-translate-y-1/4 3xl:-translate-x-0 3xl:scale-105 -translate-x-12 scale-125 brightness-50 duration-300' />
           <div className='flex-col flex lg:w-full pl-[7%] 3xl:w-2/3 duration-300 justify-center z-20'>
             <div className='lg:pb-20 md:pb-10 text-white'>
-                <h1 className='lg:text-[54px] font-[600] capitalize md:text-[24px]'>services start at $55</h1>
+                <h1 className='lg:text-[54px] font-[600] capitalize md:text-[24px]'>Security is our top priority</h1>
                 <p className='lg:text-[18px] md:text-[14px]'>Let us secure your home and repair your devices</p>
             </div>
             <div className='w-max'>
