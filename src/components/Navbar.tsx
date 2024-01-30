@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react'
 import { Button } from './ui/button';
+import { BiSolidPhoneCall } from "react-icons/bi";
 
 const Navbar = () => {
 
@@ -30,6 +31,7 @@ const Navbar = () => {
           <div>Logo</div>
         </Link>
         <div className='flex gap-5 items-center uppercase font-[500] tracking-tight text-white lg:text-[14px] md:text-[12px]'>
+          <p className='italic text-[16px]'>+1 949 999 9999</p>
           <Link href="about-us">
             About Us
           </Link>
