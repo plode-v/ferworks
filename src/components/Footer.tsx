@@ -4,10 +4,9 @@ import { FaLocationDot } from "react-icons/fa6";
 import BookingModal from './BookingModal'
 import { BiSolidPhoneCall } from "react-icons/bi";
 
+// FIXME: INSPIRED BY BROWN UNIVERSITY WEBSITE FOOTER
+
 const Footer = () => {
-
-
-
   return (
         <div className='2xl:h-[450px] lg:h-[500px] md:h-[350px] w-full bg-gradient-to-br from-[#429EF5] to-blue-800 flex items-center justify-center'>
     <div className='h-full w-full 3xl:w-1/2 duration-200 flex items-center'>
