@@ -1,14 +1,12 @@
 'use client'
 import React from 'react'
 import BookingModal from './BookingModal'
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
-import HeroAnimation from "../../public/HeroAnimation.json"
 import Image from 'next/image';
 import image1 from '../../public/img-1.jpg'
 
 const HeroBanner = () => {
   return (
-    <div className='lg:h-[700px] md:h-[420px] relative bg-neutral-100 flex flex-col items-center justify-center'>
+    <div className='lg:h-[750px] md:h-[420px] relative bg-neutral-100 flex flex-col items-center justify-center'>
         <div className='flex justify-center h-full w-full duration-300 overflow-hidden relative'>
           <div className='h-full w-full bg-blue-900 absolute z-10 opacity-5' />
           <Image src={image1} alt='hero' className='absolute w-full object-cover blur-xl -translate-y-24 3xl:-translate-y-1/4 3xl:-translate-x-0 3xl:scale-105 -translate-x-12 scale-125 brightness-50 duration-300' />
