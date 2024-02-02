@@ -18,12 +18,12 @@ const Footer = () => {
               <div className='flex gap-10 items-center'>
                 <div className='flex items-center gap-2 justify-center'>
                   <FaLocationDot className='fill-white/50 h-[22px] w-auto' />
-                  <p className='capitalize text-[24px] text-white'>santa ana, CA</p>
+                  <p className='capitalize text-[24px] text-white'>orange county, CA</p>
                 </div>
                 <div className='flex items-center gap-2 justify-center'>
                   <BiSolidPhoneCall className='fill-white/50 h-[22px] w-auto' />
                   {/* FIXME: make phone number clickable */}
-                  <p className='capitalize text-[24px] text-white'>+1 949 999 9999</p>
+                  <p className='capitalize text-[24px] text-white'>(949) 430-1028</p>
                 </div>
               </div>
               <div className='flex mt-5 w-max gap-5'>

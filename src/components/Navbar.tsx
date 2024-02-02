@@ -26,8 +26,8 @@ const Navbar = () => {
 
   return (
     <div className='w-full flex items-top justify-center h-full'>
-      <div className={`lg:h-[100px] md:h-[50px] justify-center flex items-center px-16 border-b border-black/20 w-[97%] fixed z-30 3xl:justify-center backdrop-blur-lg bg-neutral-50/80`}>
-        <div className='flex w-full items-center justify-between 3xl:w-2/3 h-full'>
+      <div className={`lg:h-[100px] md:h-[50px] justify-center flex items-center border-b lg:px-16 border-black/20 w-[97%] 3xl:w-1/2 fixed z-30 3xl:justify-center backdrop-blur-lg bg-neutral-50/80`}>
+        <div className='flex w-full items-center justify-between h-full'>
           <Link className='text-black no-underline' href="/">
             <div>Logo</div>
           </Link>

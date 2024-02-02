@@ -3,10 +3,14 @@ import Features from './Features'
 
 const Introduction = () => {
   return (
-    <div className='w-full lg:h-[150px] md:h-[80px] bg-[#fafafa] flex items-center justify-center z-10'>
-        <div className='h-full w-full 3xl:w-1/2 duration-300 flex flex-col rounded-lg text-[#429ef5] items-center justify-center'>
-            <h1 className='font-[600] opacity-70 capitalize lg:text-[60px] md:text-[30px]'>our services</h1>
+    <div className='w-full lg:h-[700px] md:h-[340px] flex-col flex items-center justify-center'>
+      <div className='w-full duration-200 3xl:w-1/2 h-full flex items-center flex-col bg-neutral-200 rounded-xl'>
+        <div className='h-full w-3/4 duration-300 flex flex-col gap-5 rounded-2xl justify-start pt-16'>
+          <h1 className='text-[42px] font-black text-black/90 w-[55%] leading-[42px]'>Say something here usually something catchy</h1>
+          <p className='text-black/80'>this is usually something that explains it. Can be about this long.</p>
         </div> 
+        <Features />
+      </div>
     </div>
   )
 }

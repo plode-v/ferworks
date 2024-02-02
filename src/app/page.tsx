@@ -12,7 +12,7 @@ export default function Home() {
       <div className="w-[97%] h-auto">
         <HeroBanner />
         <Introduction />
-        <Features />
+        {/* <Features /> */}
         <GallerySection />
         {/* <Testimonials /> */}
         <BookingSection />
