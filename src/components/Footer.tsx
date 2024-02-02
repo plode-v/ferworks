@@ -4,6 +4,8 @@ import { FaLocationDot } from "react-icons/fa6";
 import BookingModal from './BookingModal'
 import { BiSolidPhoneCall } from "react-icons/bi";
 import FooterButton from './FooterButton';
+import Image from 'next/image';
+import logo from "../../public/ferworks-logo.png";
 
 // FIXME: INSPIRED BY BROWN UNIVERSITY WEBSITE FOOTER
 
@@ -27,9 +29,9 @@ const Footer = () => {
                 </div>
               </div>
               <div className='flex mt-5 w-max gap-5'>
-                <FooterButton text='hello' link='' />
-                <button>one</button>
-                <button>one</button>
+                <FooterButton text='button1' link='' />
+                <FooterButton text='button2' link='' />
+                <FooterButton text='button3' link='' />
               </div>
             </div>
             <div className='h-max'>
@@ -38,7 +40,8 @@ const Footer = () => {
           </div>
         </div>
         <div className='w-1/3 h-2/3 border-l-[1px] border-white/50 flex flex-col justify-start px-10 gap-5'>
-          <div>logo</div>
+          {/* FIXME: CHANGE LOGO COLOR TO WHITE */}
+          <Image src={logo} alt="logo" className='' />
           <p className='text-[24px] w-max italic text-[#fafafa] font-[200] tracking-wide'>company slogan</p>
           <BookingModal buttonClass='w-max py-2 text-[#fafafa] hover:text-yellow-400 text-[18px] uppercase duration-100' buttonString='Book Now' />
         </div>
