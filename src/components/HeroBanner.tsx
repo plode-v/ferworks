@@ -6,26 +6,22 @@ import image1 from '../../public/img-1.jpg'
 
 const HeroBanner = () => {
   return (
-    <div className='lg:h-[750px] md:h-[420px] relative bg-neutral-100 flex flex-col items-center justify-center'>
-        <div className='flex justify-center h-full w-full duration-300 overflow-hidden relative'>
-          <div className='h-full w-full bg-blue-900 absolute z-10 opacity-5' />
-          <Image src={image1} alt='hero' className='absolute w-full object-cover blur-xl -translate-y-24 3xl:-translate-y-1/4 3xl:-translate-x-0 3xl:scale-105 -translate-x-12 scale-125 brightness-50 duration-300' />
-          <div className='flex-col flex lg:w-full 3xl:w-2/3 duration-300 justify-center z-20 items-center gap-10'>
-            <div className=' text-white flex items-center justify-center flex-col'>
-                <h1 className='lg:text-[54px] font-[600] capitalize md:text-[24px]'>ferworks security camera installation</h1>
-                <p className='w-1/2 text-center lg:text-[18px] md:text-[14px] opacity-80'>Contact us now to explore reliable, budget-friendly security options. Your safety and the functionality of your devices are our priorities!</p>
-            </div>
-            <div className='w-max'>
-              <BookingModal 
-                buttonClass='bg-blue-500 text-white lg:py-4 lg:px-7 md:py-3 md:px-4 rounded-full booking-section booking-left after:rounded-[10rem] md:text-[12px] lg:text-[1rem]'
-                buttonString='Book an Appointment'
-              />
-            </div>
+    <div className='lg:h-[700px] md:h-[420px] relative bg-neutral-50 flex flex-col items-center justify-center pt-[70px]'>
+      <div className='h-full w-full 3xl:w-1/2 duration-200'>
+        <div className='h-full w-full flex items-center justify-center flex-col gap-5'>
+          <div className='flex items-center justify-center gap-4 lg:text-[54px] md:text-[24px] 3xl:text-[62px]'>
+            <h1 className='text-black/80 font-[800] tracking-wider'>Your safety is our</h1>
+            <h1 className='bg-gradient-to-r uppercase from-cyan-400 to-blue-700 text-transparent bg-clip-text font-[900] tracking-wider'>priority.</h1>
           </div>
+          <p className='w-max text-center text-black/90 lg:text-[18px] md:text-[14px]'>contact us now to explore reliable, budget-friendly security options. <br /> Your safety and the functionality of your devices are our priorities!</p>
+          <p></p>
+        <BookingModal 
+          buttonClass='bg-blue-500 text-white lg:py-4 lg:px-7 md:py-3 md:px-4 rounded-full booking-section booking-left after:rounded-[10rem] md:text-[12px] lg:text-[18px]'
+          buttonString='Book an Appointment'
+        />
+        <p className='text-black/90 absolute bottom-10 capitalize'>free estimates | reliable | trustworthy</p>
         </div>
-            <div className='relative w-1/3 flex items-center justify-center'>
-              <p className='text-white absolute bottom-10 z-50 capitalize opacity-90'>free estimates | reliable | trustworthy</p>
-            </div>
+      </div>
     </div>
   )
 }

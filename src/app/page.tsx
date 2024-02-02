@@ -8,13 +8,15 @@ import Introduction from "@/components/Introduction"
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      <HeroBanner />
-      <Introduction />
-      <Features />
-      <GallerySection />
-      {/* <Testimonials /> */}
-      <BookingSection />
+    <div className="min-h-screen w-full flex flex-col items-center justify-center">
+      <div className="w-[97%] h-auto">
+        <HeroBanner />
+        <Introduction />
+        <Features />
+        <GallerySection />
+        {/* <Testimonials /> */}
+        <BookingSection />
+      </div>
     </div>
   )
 }

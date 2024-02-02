@@ -25,20 +25,22 @@ const Navbar = () => {
   })
 
   return (
-    <div className={`lg:h-[70px] md:h-[50px] justify-between flex items-center px-5 bg-[#429EF5] backdrop-blur-md w-full fixed z-30 3xl:justify-center`}>
-      <div className='flex w-full items-center justify-between 3xl:w-2/3 h-full'>
-        <Link className='text-white no-underline' href="/">
-          <div>Logo</div>
-        </Link>
-        <div className='flex gap-5 items-center uppercase font-[500] tracking-tight text-white lg:text-[14px] md:text-[12px]'>
-          <p className='italic text-[16px]'>+1 949 999 9999</p>
-          <Link href="about-us">
-            About Us
+    <div className='w-full flex items-top justify-center h-full'>
+      <div className={`lg:h-[100px] md:h-[50px] justify-center flex items-center px-16 border-b border-black/20 w-[97%] fixed z-30 3xl:justify-center backdrop-blur-lg bg-neutral-50/80`}>
+        <div className='flex w-full items-center justify-between 3xl:w-2/3 h-full'>
+          <Link className='text-black no-underline' href="/">
+            <div>Logo</div>
           </Link>
-          <Link href="contact-us">
-            Contact Us
-          </Link>
-      </div>
+          <div className='flex gap-5 items-center uppercase font-[500] tracking-tight text-black lg:text-[14px] md:text-[12px]'>
+            <p className='font-[200] tracking-wider'>(949) 430-1028</p>
+            <Link href="about-us">
+              About Us
+            </Link>
+            <Link href="contact-us">
+              Contact Us
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   )
