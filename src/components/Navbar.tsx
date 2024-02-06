@@ -32,7 +32,7 @@ const Navbar = () => {
             <Image src={logo} alt="logo" className='lg:h-[40px] w-auto' />
           </Link>
           <div className='flex gap-5 items-center uppercase font-[500] tracking-tight text-black lg:text-[14px] md:text-[12px]'>
-            <p className='font-[200] tracking-wider'>(949) 430-1028</p>
+            <a className='font-[200] tracking-wider' href='tel:+19494301028'>(949) 430-1028</a>
             <Link href="about-us">
               About Us
             </Link>

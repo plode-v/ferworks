@@ -24,8 +24,7 @@ const Footer = () => {
                 </div>
                 <div className='flex items-center gap-2 justify-center'>
                   <BiSolidPhoneCall className='fill-white/50 h-[22px] w-auto' />
-                  {/* FIXME: make phone number clickable */}
-                  <p className='capitalize text-[24px] text-white'>(949) 430-1028</p>
+                  <a className='capitalize text-[24px] text-white' href='tel:+19494301028'>(949) 430-1028</a>
                 </div>
               </div>
               <div className='flex mt-5 w-max gap-5'>
