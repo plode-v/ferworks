@@ -7,8 +7,6 @@ import FooterButton from './FooterButton';
 import Image from 'next/image';
 import logo from "../../public/ferworks-logo.png";
 
-// FIXME: INSPIRED BY BROWN UNIVERSITY WEBSITE FOOTER
-
 const Footer = () => {
   return (
     <div className='2xl:h-[450px] lg:h-[500px] md:h-[350px] mt-10 w-full bg-gradient-to-b from-blue-600 to-sky-600 flex items-center justify-center'>
@@ -28,10 +26,10 @@ const Footer = () => {
                 </div>
               </div>
               <div className='flex mt-5 w-max gap-5'>
-                <FooterButton text='button1' link='' />
-                <FooterButton text='button2' link='' />
-                <FooterButton text='button3' link='' />
+                <FooterButton text='about us' link='/about-us' />
+                <FooterButton text='contact us' link='/contact-us' />
               </div>
+              {/* FIXME: POSSIBLY ADD A BOOKING BUTTON */}
             </div>
             <div className='h-max'>
               bottom
