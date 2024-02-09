@@ -5,6 +5,7 @@ import image1 from '/public/img-1.jpg'
 import image4 from '/public/img-4.jpg'
 import image3 from '/public/img-3.jpg'
 import image2 from "/public/img-2.jpg"
+import image5 from "/public/img-5.png";
 
 const images = [image1, image4, image3, image2];
 
@@ -32,12 +33,14 @@ const GallerySection = () => {
               <Image src={image1} alt='image-1' />
               <Image src={image4} alt='image-4' />
               <Image src={image2} alt='image-2' />
+              <Image src={image5} alt='image-5' />
               <Image src={image3} alt='image-3' />
             </div>
             <div className='carousel-slide'>
               <Image src={image1} alt='image-1' />
               <Image src={image4} alt='image-4' />
               <Image src={image2} alt='image-2' />
+              <Image src={image5} alt='image-5' />
               <Image src={image3} alt='image-3' />
             </div>
           </div>
