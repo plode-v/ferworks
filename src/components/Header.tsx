@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = ({ header }: { header: string }) => {
   return (
-    <div className='3xl:h-[550px] 2xl:h-[450px] lg:h-[350px] md:h-[300px] lg:mt-[100px] relative h-full w-full 3xl:w-1/2 bg-neutral-100 overflow-hidden flex duration-200 justify-center items-center rounded-b-2xl'>
+    <div className='3xl:h-[550px] 2xl:h-[450px] lg:h-[350px] md:h-[250px] lg:mt-[100px] md:mt-[50px] relative h-full w-full 3xl:w-1/2 bg-neutral-100 overflow-hidden flex duration-200 justify-center items-center rounded-b-2xl'>
       <div className='flex items-center justify-center w-full h-full'>
           <div className='relative h-full w-1/2 flex blur-3xl'>
             <div className='bg-gradient-to-r from-sky-400 to-blue-600 2xl:h-[600px] h-[500px] aspect-square absolute -bottom-[350px] -left-[200px] rounded-full animate-spin-slow' />
