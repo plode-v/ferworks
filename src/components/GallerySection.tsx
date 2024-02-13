@@ -11,22 +11,8 @@ const images = [image1, image4, image3, image2];
 
 const GallerySection = () => {
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const newSlide = () => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }
-
-    const interval = setInterval(newSlide, 3000);
-
-    return () => {
-      clearInterval(interval);
-    }
-  }, [])
-
   return (
-      <div className='w-full lg:h-[600px] md:h-[350px] bg-neutral-50 flex items-center justify-center md:my-10'>
+      <div className='w-full lg:h-[400px] md:h-[350px] xl:h-[600px] bg-neutral-50 flex items-center justify-center md:my-10'>
         <div className="w-full 3xl:w-1/2 overflow-hidden rounded-xl duration-300">
           <div className='overflow-hidden flex items-center justify-center w-max'>
             <div className='carousel-slide'>

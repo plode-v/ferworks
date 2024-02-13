@@ -5,8 +5,9 @@ import Image from 'next/image';
 import image1 from '../../public/img-1.jpg'
 
 const HeroBanner = () => {
+  // FIXME: INTRO ANIMATION (RUNNING CHARACTER WHEN LOAD)
   return (
-    <div className='2xl:h-[750px] lg:h-screen md:h-[400px] bg-neutral-50 flex flex-col items-center justify-center lg:pt-[100px] md:pt-[50px]'>
+    <div className='2xl:h-[750px] lg:h-[50vh] xl:h-screen md:h-[400px] bg-neutral-50 flex flex-col items-center justify-center lg:pt-[100px] md:pt-[50px]'>
       <div className='h-full w-full 3xl:w-1/2 duration-200'>
         <div className='h-full w-full flex items-center justify-center flex-col md:gap-5'>
           <div className='flex items-center justify-center gap-4 lg:text-[54px] md:text-[24px] 3xl:text-[62px]'>

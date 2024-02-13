@@ -7,7 +7,7 @@ interface Components {
 
 const FeatureComponent = ({text, Children}: Components) => {
   return (
-    <div className='flex flex-col md:w-[200px] lg:w-[300px] md:h-[225px] lg:h-[350px] items-center justify-center bg-white hover:scale-[102%] duration-150 rounded-xl'>
+    <div className='flex flex-col md:w-[200px] lg:w-[250px] xl:w-[300px] md:h-[225px] lg:h-[325px] xl:h-[350px] items-center justify-center bg-white hover:scale-[102%] duration-150 rounded-xl'>
       <div className='flex flex-col h-[100%]'>
         <div className='md:h-1/2 lg:h-1/2 w-full items-center justify-center flex'>
           <div className='flex items-center justify-center'>
