@@ -9,7 +9,7 @@ import logo from "../../public/ferworks-logo.png";
 
 const Footer = () => {
   return (
-    <div className='lg:h-[300px] xl:h-[280px] md:h-[200px] h-[130px] mt-10 w-full bg-gradient-to-b from-blue-600 to-sky-600 flex items-center justify-center'>
+    <div className='lg:h-[300px] xl:h-[280px] md:h-[200px] h-[130px] md:mt-10 mt-5 w-full bg-gradient-to-b from-blue-600 to-sky-600 flex items-center justify-center'>
       <div className='h-5/6 w-full 3xl:w-1/2 duration-200 flex xl:items-center items-start'>
         <div className='lg:w-2/3 md:w-full w-full h-full flex md:justify-center items-start xl:items-center px-5 md:pl-0'>
           <div className='lg:w-3/4 md:w-[90%] xl:h-full'>

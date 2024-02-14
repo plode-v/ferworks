@@ -36,6 +36,7 @@ const Navbar = () => {
         :
         <div className='h-[50px] w-full bg-orange-500'>
           {/* FIXME: Add mobile navbar */}
+          burger button
         </div>
       }
     </div>

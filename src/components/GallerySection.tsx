@@ -7,12 +7,10 @@ import image3 from '/public/img-3.jpg'
 import image2 from "/public/img-2.jpg"
 import image5 from "/public/img-5.png";
 
-const images = [image1, image4, image3, image2];
-
 const GallerySection = () => {
 
   return (
-      <div className='w-full lg:h-[400px] md:h-[350px] xl:h-[600px] bg-neutral-50 flex items-center justify-center md:my-10'>
+      <div className='w-full lg:h-[400px] md:h-[350px] xl:h-[600px] h-[300px] bg-neutral-50 flex items-center justify-center md:my-10'>
         <div className="w-full 3xl:w-1/2 overflow-hidden rounded-xl duration-300">
           <div className='overflow-hidden flex items-center justify-center w-max'>
             <div className='carousel-slide'>

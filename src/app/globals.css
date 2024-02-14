@@ -124,12 +124,21 @@ body {
   height: 500px;
   object-fit: cover;
   margin: 0 1.25rem;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 1024px) {
   .carousel-slide img {
     width: 350px;
     height: 350px;
+  }
+}
+
+@media only screen and (max-width: 747px) {
+  .carousel-slide img {
+    width: 250px;
+    height: 250px;
+    margin: 0 0.35rem;
   }
 }
 
