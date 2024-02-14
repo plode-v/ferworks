@@ -8,7 +8,7 @@ const ContactUs = () => {
 
   return (
     <div className='h-full w-full bg-neutral-50 flex items-center justify-center'>
-      <div className='h-full w-[97%]'>
+      <div className='h-full w-[97%] 3xl:w-full flex flex-col items-center justify-center'>
         <Header header='contact us' />
         <div className='items-center justify-center flex flex-col'>
           <div className='h-max flex justify-center 2xl:gap-x-16 lg:gap-x-12 md:gap-x-8'>

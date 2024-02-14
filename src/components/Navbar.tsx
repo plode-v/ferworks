@@ -34,7 +34,7 @@ const Navbar = () => {
           </div>
         </div>
         :
-        <div>
+        <div className='h-[50px] w-full bg-orange-500'>
           {/* FIXME: Add mobile navbar */}
         </div>
       }

@@ -8,9 +8,9 @@ const page = () => {
 
   return (
     <div className='h-max bg-neutral-50 w-full flex items-center justify-center'>
-      <div className='h-full w-[97%] items-center flex flex-col'>
+      <div className='h-full w-[97%] 3xl:w-full items-center flex flex-col'>
         <Header header='about us' />
-        <div className='max-h-full items-center flex flex-col 2xl:gap-32 lg:gap-24 md:gap-16 2xl:py-32 lg:py-24 md:py-16 text-center w-2/3'>
+        <div className='max-h-full items-center flex flex-col 2xl:gap-32 lg:gap-24 md:gap-16 2xl:py-32 lg:py-24 md:py-16 text-center w-2/3 3xl:w-1/3'>
           <div className=''>
             <h1 className='uppercase font-[500] 2xl:text-[34px] lg:text-[28px] md:text-[22px] lg:pb-5 md:pb-3'>who we are</h1>
             <p className='2xl:text-[21px] lg:text-[18px] md:text-[16px] font-[300]'>Welcome to our business, where we specialized in providing top-notch security camera installation services to keep your property safe and secure. In addition, we also offer expert computer and cell phone repair services to ensure that your devices are always in good working condition. Our skilled technicians are trained to handle a variety of devices and provide prompt and reliable service. Trust us to take care of all your security and device repair needs.</p>
