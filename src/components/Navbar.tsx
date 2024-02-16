@@ -1,10 +1,11 @@
 'use client'
 import Link from 'next/link';
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import logo from "../../public/ferworks-logo.png";
 import Image from 'next/image';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { motion, Variants } from "framer-motion";
+import { BiSolidPhoneCall } from "react-icons/bi";
 
 const Navbar = () => {
 
@@ -54,46 +55,53 @@ const Navbar = () => {
       <motion.div
         initial={false}
         animate={isOpen ? "open" : "closed"}
-        className='md:hidden fixed flex w-[97%] h-[50px] border-b border-black/20 items-center justify-start z-20 backdrop-blur-lg bg-neutral-50/80 px-2'
+        className='md:hidden flex w-full h-[50px] border-b border-black/20 items-center justify-between z-20 backdrop-blur-lg bg-neutral-50/80 px-2 fixed'
       >
-        <div className='left'>
-          <motion.button
-            whileTap={{ scale: 0.85 }}
-            onClick={toggleMenu}
-            className='h-max w-max border border-black/50 p-[6px] rounded-md'
-          >
-            <GiHamburgerMenu />
-          </motion.button>
-          <motion.ul
-            variants={{
-              open: {
-                clipPath: "inset(0% 0% 0% 0% round 10px)",
-                transition: {
-                  type: "spring",
-                  bounce: 0,
-                  duration: 0.7,
-                  delayChildren: 0.3,
-                  staggerChildren: 0.05,
-                }
-              },
-              closed: {
-                clipPath: "inset(10% 50% 90% 50% round 10px)",
-                transition: {
-                  type: "spring",
-                  bounce: 0,
-                  duration: 0.3
-                }
+        <motion.button
+          whileTap={{ scale: 0.85 }}
+          onClick={toggleMenu}
+          className='h-max w-max border border-black/50 p-[6px] rounded-md z-30'
+        >
+          <GiHamburgerMenu className='text-black' />
+        </motion.button>
+        <motion.div
+          className='bg-white fixed top-[55px] left-[5px] w-3/4 h-screen z-30'
+          variants={{
+            open: {
+              clipPath: "inset(0% 0% 0% 0% round 10px)",
+              transition: {
+                type: "spring",
+                bounce: 0,
+                duration: 0.7,
+                delayChildren: 0.3,
+                staggerChildren: 0.05,
               }
-            }}
-            style={{ pointerEvents: isOpen ? "auto" : "none" }}
-          >
+            },
+            closed: {
+              clipPath: "inset(0% 100% 100% 10% round 10px)",
+              transition: {
+                type: "spring",
+                bounce: 0,
+                duration: 0.7
+              }
+            }
+          }}
+          style={{ pointerEvents: isOpen ? "auto" : "none" }}
+        >
+          <motion.ul className="list-none">
             <motion.li variants={itemVariants}>Item 1</motion.li>
             <motion.li variants={itemVariants}>Item 2</motion.li>
             <motion.li variants={itemVariants}>Item 3</motion.li>
             <motion.li variants={itemVariants}>Item 4</motion.li>
             <motion.li variants={itemVariants}>Item 5</motion.li>
           </motion.ul>
-        </div>
+        </motion.div>
+        <Link className='' href='/'>
+          <Image src={logo} alt="logo" className='md:h-[20px] lg:h-[40px] w-auto' />
+        </Link>
+        <a href="tel:+19494301028">
+          <BiSolidPhoneCall />
+        </a>
       </motion.div>
     </div>
   )
