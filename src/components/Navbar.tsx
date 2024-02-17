@@ -65,7 +65,7 @@ const Navbar = () => {
           <GiHamburgerMenu className='text-black' />
         </motion.button>
         <motion.div
-          className='bg-white fixed top-[55px] left-[5px] w-3/4 h-screen z-30'
+          className='bg-white fixed top-[50px] left-[0px] w-full h-screen z-50'
           variants={{
             open: {
               clipPath: "inset(0% 0% 0% 0% round 10px)",
