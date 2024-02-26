@@ -68,8 +68,14 @@ const HeroBanner = () => {
               ))}
             </motion.div>
           </motion.div>
-          <p className='md:w-max w-full text-center text-black/90 lg:text-[18px] md:text-[14px] text-[11px]'>contact us now to explore reliable, budget-friendly security options. <br /> Your&#8201;safety and the functionality of your devices are our priorities!</p>
-          <p></p>
+          <motion.p 
+            className='md:w-max w-full text-center text-black/90 lg:text-[18px] md:text-[14px] text-[11px]'
+            variants={textVariant}
+            initial="hidden"
+            animate="visible"
+          >
+            contact us now to explore reliable, budget-friendly security options. <br /> Your&#8201;safety and the functionality of your devices are our priorities!
+            </motion.p>
         <BookingModal 
           buttonClass='bg-blue-500 text-white lg:py-4 lg:px-7 md:py-3 md:px-4 py-1 px-4 rounded-full booking-section booking-left after:rounded-[10rem] md:text-[12px] lg:text-[18px] text-[14px]'
           buttonString='Book an Appointment'

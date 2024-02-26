@@ -32,7 +32,7 @@ const Footer = () => {
               {/* FIXME: POSSIBLY ADD A BOOKING BUTTON */}
             </div>
             <div className='h-1/3'>
-              <p className='md:text-[10px] text-[8px] pt-3 md:pt-0 text-white/80'>copyright</p>
+              <p className='md:text-[10px] text-[8px] pt-3 md:pt-1 text-white/80'>Designed & Developd by<a href="https://www.plode-vanichaka.com" target='_blank' className='text-bold text-white'> Plode Vanichaka</a></p>
             </div>
           </div>
         </div>
