@@ -161,9 +161,6 @@ const Navbar = () => {
             ))}
           </motion.ul>
           <motion.div variants={itemVariants} className='h-full' onClick={toggleMenu} />
-          {/* <motion.div className='absolute bottom-24 left-1/2' style={{translateX: '-50%'}} variants={itemVariants} onClick={toggleMenu}>
-            <button className='text-[28px] h-[50px] aspect-square rounded-xl font-bold bg-blue-400 text-white'>X</button>
-          </motion.div> */}
         </motion.div>
         <Link className='' href='/'>
           <Image src={logo} alt="logo" className='h-[40px] w-auto' />
