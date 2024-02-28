@@ -10,6 +10,24 @@ import { BiSolidPhoneCall } from "react-icons/bi";
 const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const menuTabs = [
+    {
+      name: "Home",
+      link: "/",
+    },
+    {
+      name: "About Us",
+      link: '/about-us'
+    },
+    {
+      name: "Contact Us",
+      link: "contact-us",
+    },
+    {
+      name: "(949) 430-1028",
+      link: 'tel:+19494301028'
+    }
+  ]
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -64,6 +82,7 @@ const Navbar = () => {
 
   return (
     <div className='w-full flex items-top justify-center h-full relative'>
+      {/* Desktop View */}
       <motion.div 
         className='hidden lg:h-[100px] h-[50px] justify-center md:flex items-center border-b lg:px-16 border-black/20 w-[97%] 3xl:w-1/2 fixed z-30 3xl:justify-center backdrop-blur-lg bg-neutral-50/80'
         initial="hidden"
@@ -91,20 +110,23 @@ const Navbar = () => {
           </motion.div>
         </motion.div>
       </motion.div>
+
+
+      {/* Mobile view */}
       <motion.div
         initial={false}
         animate={isOpen ? "open" : "closed"}
-        className='md:hidden flex w-full h-[50px] border-b border-black/20 items-center justify-between z-20 backdrop-blur-lg bg-neutral-50/80 px-2 fixed'
+        className='md:hidden flex w-full h-[80px] border-b border-black/20 items-center justify-between z-20 backdrop-blur-lg bg-neutral-50/80 px-2 fixed'
       >
         <motion.button
           whileTap={{ scale: 0.85 }}
           onClick={toggleMenu}
-          className='h-max w-max border border-black/50 p-[6px] rounded-md z-30'
+          className='h-max w-max border border-black/50 p-[6px] rounded-md z-30 text-[28px]'
         >
           <GiHamburgerMenu className='text-black' />
         </motion.button>
         <motion.div
-          className='bg-white fixed top-[50px] left-[0px] w-full h-screen z-50'
+          className='bg-neutral-50 fixed top-[80px] left-[0px] w-full h-[calc(100vh-80px)] z-50 flex flex-col' 
           variants={{
             open: {
               clipPath: "inset(0% 0% 0% 0% round 10px)",
@@ -127,18 +149,25 @@ const Navbar = () => {
           }}
           style={{ pointerEvents: isOpen ? "auto" : "none" }}
         >
-          <motion.ul className="list-none">
-            <motion.li variants={itemVariants}>Item 1</motion.li>
-            <motion.li variants={itemVariants}>Item 2</motion.li>
-            <motion.li variants={itemVariants}>Item 3</motion.li>
-            <motion.li variants={itemVariants}>Item 4</motion.li>
-            <motion.li variants={itemVariants}>Item 5</motion.li>
+          <motion.ul className="flex-col flex gap-0">
+            {menuTabs.map((tab, idx) => (
+              <motion.li 
+                key={idx}
+                className='bg-gray-300 active:bg-blue-400 h-full w-full last-of-type:rounded-b-lg'
+                variants={itemVariants}
+              >
+                <a href={tab.link} className='w-full flex item-center justify-center py-5'>{tab.name}</a>
+              </motion.li>
+            ))}
           </motion.ul>
+          <motion.div className='absolute bottom-10 left-1/2' style={{translateX: '-50%'}} variants={itemVariants} onClick={toggleMenu}>
+            <button className='text-[28px] h-[50px] aspect-square rounded-xl font-bold bg-blue-400 text-white'>X</button>
+          </motion.div>
         </motion.div>
         <Link className='' href='/'>
-          <Image src={logo} alt="logo" className='md:h-[20px] lg:h-[40px] w-auto' />
+          <Image src={logo} alt="logo" className='h-[40px] w-auto' />
         </Link>
-        <a href="tel:+19494301028">
+        <a href="tel:+19494301028" className='text-[32px] text-blue-600 active:text-blue-700'>
           <BiSolidPhoneCall />
         </a>
       </motion.div>
