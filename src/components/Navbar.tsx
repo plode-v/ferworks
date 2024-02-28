@@ -153,16 +153,17 @@ const Navbar = () => {
             {menuTabs.map((tab, idx) => (
               <motion.li 
                 key={idx}
-                className='bg-gray-300 active:bg-blue-400 h-full w-full last-of-type:rounded-b-lg'
+                className='bg-gray-300/50 active:bg-blue-400 h-full w-full last-of-type:rounded-b-lg'
                 variants={itemVariants}
               >
                 <a href={tab.link} className='w-full flex item-center justify-center py-5'>{tab.name}</a>
               </motion.li>
             ))}
           </motion.ul>
-          <motion.div className='absolute bottom-24 left-1/2' style={{translateX: '-50%'}} variants={itemVariants} onClick={toggleMenu}>
+          <motion.div variants={itemVariants} className='h-full' onClick={toggleMenu} />
+          {/* <motion.div className='absolute bottom-24 left-1/2' style={{translateX: '-50%'}} variants={itemVariants} onClick={toggleMenu}>
             <button className='text-[28px] h-[50px] aspect-square rounded-xl font-bold bg-blue-400 text-white'>X</button>
-          </motion.div>
+          </motion.div> */}
         </motion.div>
         <Link className='' href='/'>
           <Image src={logo} alt="logo" className='h-[40px] w-auto' />
