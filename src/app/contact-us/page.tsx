@@ -14,7 +14,6 @@ const ContactUs = () => {
         <Header header='contact us' />
         <div className='items-center justify-center flex flex-col'>
           <div className='flex h-max justify-center pb-5 sm:pb-0'>
-            {/* FIXME: MAYBE CREATE A TEMPLATE/COMPONENTS FOR EASIER READABILITY */}
             <ContactCard>
               <div className='flex flex-col justify-center h-full w-full items-center'>
                 {contactCardInfo.map((element, index) => (
@@ -35,11 +34,6 @@ const ContactUs = () => {
                 <h1 className='text-neutral-700 text-2xl capitalize tracking-wide pb-10'>Send us a message</h1>
                 <Form />
               </div>
-              {/* FIXME: MAYBE MAYBE MAYBE */}
-              {/* <div className='w-1/3 h-max flex flex-col justify-center items-start border space-y-5 p-8'>
-                <p className='font-[600] tracking-wide'>Media Contact</p>
-                <p className='leading-relaxed text-neutral-500'>If you are composing an article or conducting a review of our services, we would be delighted to connect with you and furnish tailored information, images, or any other assets to cater to you requirements.</p>
-              </div> */}
             </div>
           </section>
         </div>
