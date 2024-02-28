@@ -160,7 +160,7 @@ const Navbar = () => {
               </motion.li>
             ))}
           </motion.ul>
-          <motion.div className='absolute bottom-10 left-1/2' style={{translateX: '-50%'}} variants={itemVariants} onClick={toggleMenu}>
+          <motion.div className='absolute bottom-24 left-1/2' style={{translateX: '-50%'}} variants={itemVariants} onClick={toggleMenu}>
             <button className='text-[28px] h-[50px] aspect-square rounded-xl font-bold bg-blue-400 text-white'>X</button>
           </motion.div>
         </motion.div>
