@@ -27,7 +27,7 @@ const Form = () => {
     }
 
   return (
-    <form ref={form} onSubmit={sendEmail} className='flex flex-col 2xl:gap-10 lg:gap-5 md:gap-4 w-full'>
+    <form ref={form} onSubmit={sendEmail} className='flex flex-col 2xl:gap-10 lg:gap-5 gap-4 w-full'>
         <div className='grid space-y-2'>
             <label className='text-xs text-neutral-500'>Name</label>
             <input type="text" name='name' className='border-b focus:outline-none 2xl:h-8 font-[300] text-neutral-700 bg-neutral-50' />

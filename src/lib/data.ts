@@ -1,3 +1,4 @@
+
 export const aboutUs = [
     {
         h1: "who we are",
@@ -9,5 +10,20 @@ export const aboutUs = [
     },
     {
         p: 'Ferworks is your trusted partner in cutting-edge security solutions. At Ferworks, we understarnd the importance of safeguarding what matters most to you, whether it&apos;s your home, business, or community.'
+    }
+]
+
+export const contactCardInfo = [
+    {
+        h1: "Email:",
+        p: "ferworkstech@gmail.com"
+    },
+    {
+        h1: "Phone:",
+        p: "(949) 430-1028"
+    },
+    {
+        h1: "Areas:",
+        p: "Southern California (OC, LA)"
     }
 ]

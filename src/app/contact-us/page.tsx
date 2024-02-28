@@ -3,6 +3,8 @@ import React from 'react'
 import Header from '@/components/Header'
 import ContactCard from '@/components/ContactCard'
 import Form from '@/components/Form';
+import { contactCardInfo } from '@/lib/data';
+import { BiSolidPhoneCall } from "react-icons/bi";
 
 const ContactUs = () => {
 
@@ -11,25 +13,23 @@ const ContactUs = () => {
       <div className='h-full w-[97%] 3xl:w-full flex flex-col items-center justify-center'>
         <Header header='contact us' />
         <div className='items-center justify-center flex flex-col'>
-          <div className='h-max flex justify-center 2xl:gap-x-16 lg:gap-x-12 md:gap-x-8'>
+          <div className='flex h-max justify-center pb-5 sm:pb-0'>
             {/* FIXME: MAYBE CREATE A TEMPLATE/COMPONENTS FOR EASIER READABILITY */}
             <ContactCard>
-              <div>
-                address
-              </div>
-            </ContactCard>
-            <ContactCard>
-              <div>
-                phone number
-              </div>
-            </ContactCard>
-            <ContactCard>
-              <div>
-                emails
+              <div className='flex flex-col justify-center h-full w-full items-center'>
+                {contactCardInfo.map((element, index) => (
+                  <div
+                    key={index}
+                    className='flex md:gap-2 gap-1 py-1 md:py-3 2xl:py-4 md:w-5/6 w-[95%] justify-start md:text-lg 2xl:text-xl text-sm'
+                  >
+                    <h1 className='font-[200] text-neutral-500'>{element.h1}</h1>
+                    <p className='font-[500] text-neutral-800'>{element.p}</p>
+                  </div>
+                ))}
               </div>
             </ContactCard>
           </div>
-          <section className='2xl:h-[800px] lg:h-[600px] md:h-[550px] w-full flex justify-center items-center 3xl:w-2/3'>
+          <section className='2xl:h-[800px] lg:h-[600px] md:h-[550px] w-[97vw] h-full 3xl:w-[70vw] flex justify-center items-center'>
             <div className='flex h-max 3xl:w-2/3 w-4/5 items-start justify-center lg:gap-20 md:gap-10'>
               <div className='lg:w-2/3 w-full h-3/4 justify-evenly flex flex-col items-start'>
                 <h1 className='text-neutral-700 text-2xl capitalize tracking-wide pb-10'>Send us a message</h1>
